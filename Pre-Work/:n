@@ -1,4 +1,0 @@
-/n
-# in this first string, it is cut off after Sharon
-unescaped_string = ‘This is Sharon’s unescaped string’ 
-escaped_string = ‘This is Sharon\’s escaped string’

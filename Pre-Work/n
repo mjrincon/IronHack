@@ -1,0 +1,3 @@
+n
+unescaped_string = 'This is Sharons unescaped string'
+escaped_string = ‘This is Sharon\’s escaped string’
