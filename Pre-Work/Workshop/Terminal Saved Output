@@ -1,0 +1,170 @@
+Last login: Thu Dec 31 22:55:17 on ttys000
+Mathew-Rincons-MacBook-Pro:~ mathewrincon$ gif config global user.name "Mathew Rincon"
+-bash: gif: command not found
+Mathew-Rincons-MacBook-Pro:~ mathewrincon$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Forward-port local commits to the updated upstream head
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+Mathew-Rincons-MacBook-Pro:~ mathewrincon$ git config --global username "<Mathew Rincon>"
+error: key does not contain a section: username
+Mathew-Rincons-MacBook-Pro:~ mathewrincon$ git config --global user.name "<Mathew Rincon>"
+Mathew-Rincons-MacBook-Pro:~ mathewrincon$ git config --global user.email "<mathewjrincon@gmail.com>"
+Mathew-Rincons-MacBook-Pro:~ mathewrincon$ git config --global --add color.ui true
+Mathew-Rincons-MacBook-Pro:~ mathewrincon$ pwd
+/Users/mathewrincon
+Mathew-Rincons-MacBook-Pro:~ mathewrincon$ pwd
+/Users/mathewrincon
+Mathew-Rincons-MacBook-Pro:~ mathewrincon$  ls
+386349_10150372202257695_9583477694_8587123_101214989_n.jpg
+Applications
+Desktop
+Documents
+Downloads
+Dropbox
+Ironhack
+Ironhack.txt
+Library
+Movies
+Music
+Pictures
+Public
+Sites
+VirtualBox VMs
+WindowsSupport
+Wine Files
+ihwjillianryan_4k.mp4.download
+movies.txt
+songs.txt
+work
+Mathew-Rincons-MacBook-Pro:~ mathewrincon$ cd desktop
+Mathew-Rincons-MacBook-Pro:desktop mathewrincon$ cd workshop
+Mathew-Rincons-MacBook-Pro:workshop mathewrincon$ ls
+Imitation	Notes.txt
+Mathew-Rincons-MacBook-Pro:workshop mathewrincon$ git init
+Initialized empty Git repository in /Users/mathewrincon/Desktop/Workshop/.git/
+Mathew-Rincons-MacBook-Pro:workshop mathewrincon$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Imitation/
+	Notes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+Mathew-Rincons-MacBook-Pro:workshop mathewrincon$ git add Notes.txt
+Mathew-Rincons-MacBook-Pro:workshop mathewrincon$ got status
+-bash: got: command not found
+Mathew-Rincons-MacBook-Pro:workshop mathewrincon$ git add <Notes.txt>
+-bash: syntax error near unexpected token `newline'
+Mathew-Rincons-MacBook-Pro:workshop mathewrincon$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   Notes.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Imitation/
+
+Mathew-Rincons-MacBook-Pro:workshop mathewrincon$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   Notes.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Imitation/
+
+Mathew-Rincons-MacBook-Pro:workshop mathewrincon$ git add .
+Mathew-Rincons-MacBook-Pro:workshop mathewrincon$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   Imitation/third.txt
+	new file:   Notes.txt
+
+Mathew-Rincons-MacBook-Pro:workshop mathewrincon$ git commit
+
+Initial commit.
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#       new file:   Imitation/third.txt
+#       new file:   Notes.txt
+#
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT —git add .
+git add .
+git
+

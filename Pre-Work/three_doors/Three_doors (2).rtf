@@ -1,0 +1,682 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fnil\fcharset0 AndaleMono;}
+{\colortbl;\red255\green255\blue255;\red47\green255\blue18;\red47\green180\blue29;\red180\green36\blue25;
+\red159\green160\blue28;\red0\green255\blue0;\red46\green174\blue187;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb0 \CocoaLigature0 Last login: Sat Jan  2 01:28:22 on ttys001\
+Mathew-Rincons-MacBook-Pro:~ mathewrincon$ cd\
+Mathew-Rincons-MacBook-Pro:~ mathewrincon$ mkdir git-practice\
+mkdir: git-practice: File exists\
+Mathew-Rincons-MacBook-Pro:~ mathewrincon$ cd ~/git-practice\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ touch three_doors.txt\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ vi three_doors.txt\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ cd\
+Mathew-Rincons-MacBook-Pro:~ mathewrincon$ cd ~/git-practice\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git init\
+Reinitialized existing Git repository in /Users/mathewrincon/git-practice/.git/\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ vi three_doors.txt\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git add three_doors.txt\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git status\
+On branch master\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf3 modified:   three_doors.txt\cf2 \
+\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git commit -m "first commit"\
+[master a7ec045] first commit\
+ 1 file changed, 1 insertion(+)\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ cd ~/git-practice\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ vi three_doors.txt\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git status\
+On branch master\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf4 modified:   three_doors.txt\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git add three_doors.txt\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git commit -m "second commit"\
+[master ace133e] second commit\
+ 1 file changed, 2 insertions(+)\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git status\
+On branch master\
+nothing to commit, working directory clean\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git log\
+\cf5 commit ace133e67ba51bd95972886691616c7bc8eca6a9\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 01:57:38 2016 -0500\
+\
+    second commit\
+\
+\cf5 commit a7ec0451be09d12eadae98dfe144807913048a56\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 01:55:34 2016 -0500\
+\
+    first commit\
+\
+\cf5 commit e3bafc2655ea3307896f08fccd7f5877988218f4\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 01:39:13 2016 -0500\
+\
+    first commit\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ vi three_doors.txt\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git diff\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf6 diff --git a/three_doors.txt b/three_doors.txt\cf2 \
+\cf6 index ca25fca..11f2013 100644\cf2 \
+\cf6 --- a/three_doors.txt\cf2 \
+\cf6 +++ b/three_doors.txt\cf2 \
+\cf7 @@ -1,3 +1,3 @@\cf2 \
+ You are in a room with three doors.\
+ Which door will you go through?\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 -\cf2 \
+\cf3 +Not going through any door, the room has beer and pizza and I will stay.\cf2 \
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ cd\
+Mathew-Rincons-MacBook-Pro:~ mathewrincon$ cd ~/git-practice\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ touch first_choice.txt\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git help\
+usage: git [--version] [--help] [-C <path>] [-c name=value]\
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]\
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\
+           <command> [<args>]\
+\
+These are common Git commands used in various situations:\
+\
+start a working area (see also: git help tutorial)\
+   clone      Clone a repository into a new directory\
+   init       Create an empty Git repository or reinitialize an existing one\
+\
+work on the current change (see also: git help everyday)\
+   add        Add file contents to the index\
+   mv         Move or rename a file, a directory, or a symlink\
+   reset      Reset current HEAD to the specified state\
+   rm         Remove files from the working tree and from the index\
+\
+examine the history and state (see also: git help revisions)\
+   bisect     Use binary search to find the commit that introduced a bug\
+   grep       Print lines matching a pattern\
+   log        Show commit logs\
+   show       Show various types of objects\
+   status     Show the working tree status\
+\
+grow, mark and tweak your common history\
+   branch     List, create, or delete branches\
+   checkout   Switch branches or restore working tree files\
+   commit     Record changes to the repository\
+   diff       Show changes between commits, commit and working tree, etc\
+   merge      Join two or more development histories together\
+   rebase     Forward-port local commits to the updated upstream head\
+   tag        Create, list, delete or verify a tag object signed with GPG\
+\
+collaborate (see also: git help workflows)\
+   fetch      Download objects and refs from another repository\
+   pull       Fetch from and integrate with another repository or a local branch\
+   push       Update remote refs along with associated objects\
+\
+'git help -a' and 'git help -g' list available subcommands and some\
+concept guides. See 'git help <command>' or 'git help <concept>'\
+to read about a specific subcommand or concept.\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ touch second_choice.txt\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ vi touch second_choice.txt\
+2 files to edit\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git commit second_choice.txt\
+error: pathspec 'second_choice.txt' did not match any file(s) known to git.\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git commit <second_choice.txt>\
+-bash: syntax error near unexpected token `newline'\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git commit -m "third commit"\
+On branch master\
+Changes not staged for commit:\
+	\cf4 modified:   three_doors.txt\cf2 \
+\
+Untracked files:\
+	\cf4 first_choice.txt\cf2 \
+	\cf4 second_choice.txt\cf2 \
+	\cf4 touch\cf2 \
+\
+no changes added to commit\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git rm touch\
+fatal: pathspec 'touch' did not match any files\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git rm "touch"\
+fatal: pathspec 'touch' did not match any files\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git add three_doors.txt\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git add.\
+git: 'add.' is not a git command. See 'git --help'.\
+\
+Did you mean this?\
+	add\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git add .\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git status\
+On branch master\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf3 new file:   first_choice.txt\cf2 \
+	\cf3 new file:   second_choice.txt\cf2 \
+	\cf3 modified:   three_doors.txt\cf2 \
+	\cf3 new file:   touch\cf2 \
+\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git commit -m "third commit"\
+[master 277d593] third commit\
+ 4 files changed, 2 insertions(+), 1 deletion(-)\
+ create mode 100644 first_choice.txt\
+ create mode 100644 second_choice.txt\
+ create mode 100644 touch\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git log\
+\cf5 commit 277d593e78f441e01b4f0251477405ea85745f84\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 02:20:04 2016 -0500\
+\
+    third commit\
+\
+\cf5 commit ace133e67ba51bd95972886691616c7bc8eca6a9\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 01:57:38 2016 -0500\
+\
+    second commit\
+\
+\cf5 commit a7ec0451be09d12eadae98dfe144807913048a56\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 01:55:34 2016 -0500\
+\
+    first commit\
+\
+\cf5 commit e3bafc2655ea3307896f08fccd7f5877988218f4\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 01:39:13 2016 -0500\
+\
+    first commit\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ vi second_choice.txt\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git status\
+On branch master\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf4 modified:   second_choice.txt\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git add .\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git status\
+On branch master\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf3 modified:   second_choice.txt\cf2 \
+\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git commit -m "fourth commit"\
+[master 0ec2b89] fourth commit\
+ 1 file changed, 1 insertion(+)\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git log\
+\cf5 commit 0ec2b89bc96d202cc49ed32f3c193886338e9ecd\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 02:22:05 2016 -0500\
+\
+    fourth commit\
+\
+\
+\cf5 commit 277d593e78f441e01b4f0251477405ea85745f84\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 02:20:04 2016 -0500\
+\
+    third commit\
+\
+\cf5 commit ace133e67ba51bd95972886691616c7bc8eca6a9\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 01:57:38 2016 -0500\
+\
+    second commit\
+\
+\cf5 commit a7ec0451be09d12eadae98dfe144807913048a56\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 01:55:34 2016 -0500\
+\
+    first commit\
+\
+\cf5 commit e3bafc2655ea3307896f08fccd7f5877988218f4\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 01:39:13 2016 -0500\
+\
+    first commit\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ vi second_choice.txt\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ add .\
+-bash: add: command not found\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git add .\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git status\
+On branch master\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf3 modified:   second_choice.txt\cf2 \
+\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git commit -m "fifth commit"\
+[master 35c3bcb] fifth commit\
+ 1 file changed, 3 insertions(+)\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git branch\
+* \cf3 master\cf2 \
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git checkout\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git branch new\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git checkout\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git log\
+\cf5 commit 35c3bcbed9714fecd5467f8957f43dda23fa16f9\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 02:24:26 2016 -0500\
+\
+    fifth commit\
+\
+\cf5 commit 0ec2b89bc96d202cc49ed32f3c193886338e9ecd\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 02:22:05 2016 -0500\
+\
+    fourth commit\
+\
+\cf5 commit 277d593e78f441e01b4f0251477405ea85745f84\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 02:20:04 2016 -0500\
+\
+    third commit\
+\
+\cf5 commit ace133e67ba51bd95972886691616c7bc8eca6a9\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 01:57:38 2016 -0500\
+\
+    second commit\
+\
+\cf5 commit a7ec0451be09d12eadae98dfe144807913048a56\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 01:55:34 2016 -0500\
+\
+    first commit\
+\
+\cf5 commit e3bafc2655ea3307896f08fccd7f5877988218f4\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 01:39:13 2016 -0500\
+\
+    first commit\
+ ESCOC\
+5ea85745f84\
+il.com>\
+\
+\
+\
+\
+c7bc8eca6a9\
+il.com>\
+\
+\
+\
+\
+07913048a56\
+il.com>\
+\
+\
+\
+\
+877988218f4\
+il.com>\
+\
+\
+\
+ ESCOC\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+ ESCOD\
+5ea85745f84\
+il.com>\
+\
+\
+\
+\
+c7bc8eca6a9\
+il.com>\
+\
+\
+\
+\
+07913048a56\
+il.com>\
+\
+\
+\
+\
+877988218f4\
+il.com>\
+\
+\
+\
+ ESCOD\
+\cf5 commit 277d593e78f441e01b4f0251477405ea85745f84\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 02:20:04 2016 -0500\
+\
+    third commit\
+\
+\cf5 commit ace133e67ba51bd95972886691616c7bc8eca6a9\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 01:57:38 2016 -0500\
+\
+    second commit\
+\
+\cf5 commit a7ec0451be09d12eadae98dfe144807913048a56\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 01:55:34 2016 -0500\
+\
+    first commit\
+\
+\cf5 commit e3bafc2655ea3307896f08fccd7f5877988218f4\cf2 \
+Author: Mathew Rincon <mathewjrincon@gmail.com>\
+Date:   Sat Jan 2 01:39:13 2016 -0500\
+\
+    first commit\
+ ESCOC\
+5ea85745f84\
+il.com>\
+\
+\
+\
+\
+c7bc8eca6a9\
+il.com>\
+\
+\
+\
+\
+07913048a56\
+il.com>\
+\
+\
+\
+\
+877988218f4\
+il.com>\
+\
+\
+\
+ ESCOC\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+ ESCOC\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+ ESCOC\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+ ESCOC\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+ ESCOC\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+ ESCOC\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+ ESCOD\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+ ESCOD\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+ ESCOC\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git branch <branch>\
+-bash: syntax error near unexpected token `newline'\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git branch\
+* \cf3 master\cf2 \
+  new\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git checkout <new>\
+-bash: syntax error near unexpected token `newline'\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git checkout new\
+Switched to branch 'new'\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ vi second_choice.txt\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git status\
+On branch new\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf4 modified:   second_choice.txt\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git add .\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git commit -m "new branch commit"\
+[new 3a840fa] new branch commit\
+ 1 file changed, 1 insertion(+), 1 deletion(-)\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git checkout master\
+Switched to branch 'master'\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ git merge --no-ff new\
+Merge made by the 'recursive' strategy.\
+ second_choice.txt | 2 \cf3 +\cf4 -\cf2 \
+ 1 file changed, 1 insertion(+), 1 deletion(-)\
+Mathew-Rincons-MacBook-Pro:git-practice mathewrincon$ }
