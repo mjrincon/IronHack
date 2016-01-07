@@ -17,4 +17,3 @@ other_car = Car.new "grey"
 
 my_car.print_color
 other_car.print_color
-my_car.honk
