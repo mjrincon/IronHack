@@ -1,3 +1,31 @@
-p {
-	background-color: grey;
+#finalParagraph {
+  background-color: grey;
+  font-family: "Baskerville";
+}
+
+.niceParagraph {
+  background-color: grey;
+  font-family: "Baskerville";
+}
+
+header p {
+	background-color: rgb(128, 128,   0);
+}
+
+header p {
+	font-family: Cardo;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+footer p {
+	font-family: Muli;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
 }
