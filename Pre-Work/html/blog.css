@@ -8,8 +8,12 @@
   font-family: "Baskerville";
 }
 
-header p {
-	background-color: rgb(128, 128,   0);
+
+}
+
+.my-box {
+  padding: 10px;
+  margin: 10px;
 }
 
 header p {
@@ -21,11 +25,21 @@ header p {
 	line-height: 20px;
 }
 
-footer p {
-	font-family: Muli;
-	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 20px;
+footer {
+  font-family: Cambria, Georgia, serif;
+  font-size: 40px;
+
 }
+
+.articleContainer {
+  background-color: #FFFFFF;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.postAuthor {
+  font-size: 20px;
+}
+
