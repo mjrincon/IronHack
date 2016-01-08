@@ -26,7 +26,6 @@ class Human < Animal
 end
 
 dog = Dog.new "Winston Furchill"
-cat = Cat.new "David Meowie"
 human = Human.new "Johnny Appleseed", 12000
 
 dog.describe

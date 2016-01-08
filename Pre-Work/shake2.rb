@@ -28,7 +28,8 @@ class Ingredient
   end
 end
 
-nizars_milkshake = MilkShake.new
+
+nizars_milkshake = Milkshake.new
 banana = Ingredient.new("Banana", 2)
 chocolate_chips = Ingredient.new("Chocolate Chips", 1)
 
