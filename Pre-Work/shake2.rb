@@ -32,9 +32,12 @@ end
 nizars_milkshake = Milkshake.new
 banana = Ingredient.new("Banana", 2)
 chocolate_chips = Ingredient.new("Chocolate Chips", 1)
+oreo = Ingredient.new("Oreo", 3)
 
 nizars_milkshake.add_ingredient(banana)
 nizars_milkshake.add_ingredient(chocolate_chips)
+nizars_milkshake.add_ingredient(oreo)
+
 
 puts nizars_milkshake.price_of_milkshake
 

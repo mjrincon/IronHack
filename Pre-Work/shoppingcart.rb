@@ -1,3 +1,4 @@
+
 class ShoppingCart
   def initialize (items)
     @items = []
@@ -11,13 +12,14 @@ class items
 	end
 
 	def price
+
 		
 	end
 end 
 	
 class Houseware < Item 
 	def price
-		#hmm
+		
 	end
 end
 
@@ -25,4 +27,11 @@ class Fruit < Item
 	def price
 		#hmm again
 	end
-end					
+end
+
+
+mycart = ShoppingCart.new(@items)
+Bananas = Item.new("Bananas", 10)
+
+puts mycart.
+

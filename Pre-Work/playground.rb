@@ -4,7 +4,7 @@ class Animal
   end
 
   def describe
-    puts "This animal's name is #{@name}"
+    puts "This animal's name is #{@name}"  
   end
 end
 
@@ -16,16 +16,16 @@ end
 
 class Human < Animal
   def initialize(name, salary)
-    @name = name
+    (super)name
     @salary = salary
   end
 
   def describe_with_salary
-    puts "This human's name is #{@name} and its salary is #{@salary}"
+    puts "This human's name is #{name} and it's salary is #{@salary}"
   end
 end
 
-dog = Dog.new "Winston Furchill"
+dog = dog.new "Winston Furchill"
 cat = Cat.new "David Meowie"
 human = Human.new "Johnny Appleseed", 12000
 
