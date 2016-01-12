@@ -36,6 +36,12 @@ user_input = gets.chomp
 if user_input == "HTL"
 	highest_to_lowest = homes.sort { |home_a, home_b | home_b <=> home_a|}
 	array_printer(highest_to_lowest)
+
+elsif user_input == "LTH"
+	lowest_to_highest = homes.sort { | home_a, home_b | home_b <==> |}
+	array_printer(lowest_to_highest)
+elsif user_input == "CAP"
+highest_to_lowest_cap	
 	
 
 
