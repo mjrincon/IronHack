@@ -12,7 +12,7 @@ class Blog
 			post_1.date <=> post_2.date
 		end
 		sorted_posts.each do | blog |
-		puts blog.title
+		puts blog.print
 		puts blog.text
 		end	
 

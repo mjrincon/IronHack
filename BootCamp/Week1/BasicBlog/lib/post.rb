@@ -6,6 +6,10 @@ class Post
 		@text = text
   end
 	def print
-		puts "#{@title} #{@date} #{@text}"
+		puts "#{@title}" 
+		puts "**********"
+		puts "#{@text}"
+		puts "----------"
+		puts "#{@date}"
 	end
 end	
