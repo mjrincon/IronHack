@@ -21,4 +21,24 @@ blog.posts.each do |post|
 	puts "-----------"
 end
 
+#started adding here from TA example
+blog.publish_front_page
+
+puts "nxt for Next pre for Previous"
+
+user_input = gets.chomp
+
+while user_input != "exit"
+user_input = gets.chomp
+
+if user_input == "nxt"
+	blog.next_page
+elsif 	user_input == "pre"
+	blog.previous_page
+else user_input == "exit"	
+	puts "Command not found"	
+end
+user_input = gets.chomp
+end
+
 

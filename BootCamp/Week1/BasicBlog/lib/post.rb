@@ -4,7 +4,7 @@ class Post
 		@title = title
 		@date = date
 		@text = text
-  end
+    end
 	def print
 		puts "#{@title}" 
 		puts "**********"

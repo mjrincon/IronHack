@@ -10,6 +10,8 @@ class Car
 	def initialize
 		@wheels = 3
 		@sound = "Vrooooom"
+	end
+end		
 
 chopper = Helicopter.new
 
@@ -29,6 +31,7 @@ class WheelCounter
   end
   end
 end 
+
 counter = WheelCounter.new
 counter.add_vehicle(chopper)
 
