@@ -1,7 +1,8 @@
 require 'ruby-dictionary'
 
-
 class Word
+
+
 		def change_words(word1, word2)
 			dictionary = Dictionary.from_file('words')
 			position = 0
@@ -9,7 +10,6 @@ class Word
 			while word1 != word2
 				if word1[position] != word2[position]
 					fake_word[position] = word2[position]
-
 	
 					if dictionary.exists?(fake_word) == true
 						word1[position] = word2[position]
