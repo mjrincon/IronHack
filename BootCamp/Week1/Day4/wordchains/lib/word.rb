@@ -15,11 +15,11 @@ class Word
 						word1[position] = word2[position]
 						position += 1
 					else
-						fake_word = word1
+						fake_word = word1.dup
 						position += 1
 					end
 				end
-				puts word1
+				puts word1.dup
 				
 			end
 		end

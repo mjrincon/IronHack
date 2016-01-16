@@ -17,3 +17,4 @@ word.change_words("dog", "cat")
 
 
 
+#dict = Dictionary.from_file(usr/share/dict/)
