@@ -4,6 +4,8 @@ require_relative("lib/bishop.rb")
 require_relative("lib/queen.rb")
 require_relative("lib/knight.rb")
 require_relative("lib/pawn.rb")
+require_relative("lib/board.rb")
+
 
 
 black_king = King.new(5, 8, "black")
@@ -25,6 +27,7 @@ puts "\n------------------\n"
 white_rook = Rook.new(1, 1, "white")
 
 puts "Good Move for Rook"
+
 p white_rook.move?(5, 1)
 
 puts "Bad Move for Rook"
@@ -79,19 +82,30 @@ p white_knight.move?(3, 8)
 
 puts "\n------------------\n"
 
-puts "\nTesting the Pawn"
+# puts "\nTesting the Pawn"
 
-white_pawn = Pawn.new(4, 2, "white")
+# white_pawn = Pawn.new(4, 2, "white")
 
-puts "\nTesting True"
+# puts "\nTesting True"
 
 
-p white_pawn.move?(4, 4)
-p white_pawn.move?(4, 5)
+# p white_pawn.move?(4, 4)
+# p white_pawn.move?(4, 5)
 
-puts "\nTesting False"
-p white_pawn.move?(4, 7)
-p white_pawn.move?(8, 2)
+# puts "\nTesting False"
+# p white_pawn.move?(4, 7)
+# p white_pawn.move?(8, 2)
+
+
+puts "\nTesting the Board"
+
+chess_board = Board.new
+
+chess_board.valid.move?
+
+
+
+
 
 
 
