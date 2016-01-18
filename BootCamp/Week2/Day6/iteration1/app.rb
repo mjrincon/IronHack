@@ -1,4 +1,8 @@
-require_relative("lib/string_calculator")
+require_relative("lib/string_calculator.rb")
+
+
+
+
 
 my_calc = StringCalculator.new
 
