@@ -1,0 +1,24 @@
+<html>
+<title>Sucky Blog</title>
+
+<h1>Welcome to the WORST BLOG EVER!</h1>
+
+<form action= "/home" method="post">
+
+<% @my_blog.each do | post |  %>
+<ul>
+<li>
+<%= post.title  %>
+<%= post.time %>
+
+
+</li>
+</ul>
+
+<% end %>
+
+
+
+</form>
+
+</html>
