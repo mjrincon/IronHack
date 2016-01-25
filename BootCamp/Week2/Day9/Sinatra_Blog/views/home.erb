@@ -5,15 +5,16 @@
 
 <form action= "/home" method="post">
 
-<% @my_blog.each do | post |  %>
-<ul>
-<li>
-<%= post.title  %>
+<% @my_blog.each_with_index do | post, index |  %>
+
+<a href=>"/post_details/<% index%><%= post.title  %></a>
+
+
 <%= post.time %>
-
-
 </li>
 </ul>
+
+
 
 <% end %>
 

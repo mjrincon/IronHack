@@ -6,5 +6,6 @@ class Task
         @content = content
         @id = @@current_id
         @@current_id += 1
-    end
+
+	end
 end

@@ -1,0 +1,12 @@
+<h1>"Welcome to the TodoList"</h1>
+
+<form action= "/tasks" method="post">
+
+<% @my_list.each do | task |  %>
+<%= task.content %> <br>
+
+<% end %>
+
+<a href="/new_task">New Task</a>
+
+</form>
