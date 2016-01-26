@@ -1,0 +1,33 @@
+
+
+body {
+	font-family: "Roboto", sans-serif;
+
+}
+
+
+
+
+
+
+div.row_1 {
+
+background-color:#f5f5f5;
+
+}
+
+div.row_2 {
+
+background-color:#f5f5f5;
+
+}
+
+div.main {
+
+background-color:white;
+
+}
+div.comment.button{
+
+	border-radius:25px;
+}
