@@ -28,18 +28,18 @@ describe("the JavaScript language", function(){
 
     it("surprises me, NaN is not comparable with NaN", function(){
         expect(5 / "a").toEqual(5 / "a");
-        expect(typeof(NaN)).toEqual(typeof(NaN));
+        //expect(typeof(NaN)).toEqual();
         expect(isNaN(5 / "a")).toBeTruthy();
     });
 
     it("considers an empty string to be falsy", function(){
-        expect("" === false).toBeFalsy();// Truthy or Falsy solved
-        expect("a" !== false).toBeTruthy();// Truthy or Falsy
+        //expect("" == false).toBe......();// Truthy or Falsy
+        //expect("" === false).toBe.....();// Truthy or Falsy
     });
 
     it("considers zero to be falsy", function(){
-        expect(0 !== false).toBeTruthy();// Truthy or Falsy solved
-        expect(0 === false).toBeFalsy();// Truthy or Falsy
+        //expect(0 == false).toBe......();// Truthy or Falsy
+        //expect(0 === false).toBe.....();// Truthy or Falsy
     });
 
     it("considers nulls to be falsy", function(){
@@ -52,9 +52,9 @@ describe("the JavaScript language", function(){
            result = false;
         }
 
-        expect(result == false).toBeTruthy();// Truthy or Falsy success
-        expect(null === false).toBeFalsy();// Truthy or Falsy
-        expect(null !== false).toBeTruthy();// Truthy or Falsy
+        //expect(result == false).toBe......();// Truthy or Falsy
+        //expect(null === false).toBe.....();// Truthy or Falsy
+        //expect(null == false).toBe....();// Truthy or Falsy
     });
 
     it("knows the type of a function", function(){
