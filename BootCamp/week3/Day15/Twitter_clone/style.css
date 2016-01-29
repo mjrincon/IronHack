@@ -1,0 +1,27 @@
+div {
+	border: 5px; border-style: solid
+
+}
+
+
+
+
+.banner{
+
+position: relative;
+text-align: center;
+
+}
+
+.banner img{
+height: 300px;
+width:100%
+
+}
+
+
+
+.username_info  span{
+
+	color:gray;
+}
