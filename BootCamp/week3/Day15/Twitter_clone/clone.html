@@ -9,8 +9,8 @@
 </head>
 
 <body>
-<div class= "container">
-	<div class= "row"><!--LOGO/Home Page/Links/Rolling Row-->
+<div class="container"> <!--Start 1st Container-->
+	<div class= "row"> <!--LOGO/Home Page/Links/Rolling Row-->
 		<img src=http://designshack.co.uk/wp-content/uploads/larrybird-2.jpg height="20" width="20">
 		<button type="button" class="btn btn-link">Home</button>
 		<span class="glyphicon glyphicon-flash" aria-hidden="true"style="color: blue"></span>
@@ -22,19 +22,24 @@
   			</div>
   			<button type="submit" class="btn btn-default">Submit</button>
 		</form>
+
 		<button type="button" class="btn btn-link">Have an account? Sign In</button>
 
 
 	</div>
-
-	<div class= "row"><!--IMAGE row-->
+</div> <!--END 1st CONTAINER-->
+<div class="container-fluid"><!--Added Container fluid-->
+	<div class= "row">
 		<section class="banner">
  		<img src ="http://41.media.tumblr.com/27a35c0a232fa32ddaf8df754361f824/tumblr_nvll91dEy61ruj0bpo1_1280.jpg">
  		</section>
 	</div>
+</div><!--Ended Container FLuid-->
 
-	<div class= "row"> <!--Tracking # Tweets Rows / Follow Button-->
-		<div class= "col-sm-3">
+<div class="container"> <!--Add 3rd and Main Container-->
+
+	<div class="row"> <!--Tracking # Tweets Rows / Follow Button-->
+		<div class= "col-sm-3 hover_over_column">
 			<!--Avatar hovers over this column-->
 		</div>
 		<div class= "col-sm-6"> <!--#'s' column-->
@@ -98,8 +103,8 @@
 
 			<div nav= "row"><!--FEED Header/NAV-->
 			<button type="button" class="btn btn-link">Tweets</button>
-			<button type="button" class="btn btn-link">Tweets & Replies</button>
-			<button type="button" class="btn btn-link">Photos & Video</button>
+			<button type="button" class="btn btn-link">Tweets  Replies</button>
+			<button type="button" class="btn btn-link">Photos  Video</button>
 
 			</div>
 
@@ -134,11 +139,10 @@
 			<div class= "row"><!--Suggestions Row/You May Like-->
 				<div class= "col-sm-12"><!--Needed to add a column to add 2 more rows-->
 					<div class="row you_may_like_header">
-						<div class="jumbotron">
   							<h8>You May Like...Refresh Button</h8>
 
-						</div>
 					</div>
+
 					<div class="row you_may_like_list">
 
 								<dl>
@@ -154,30 +158,23 @@
 								  <dd>...</dd>
 								</dl>
 					</div>
-
 				</div>
-
 
 			</div>
 
 			<div class= "row"><!--Links/Trends Row-->
 				<div class= "col-sm-12"><!--Needed to add a column to add 2 more rows-->
-					<div class="row you_may_like_header">
-						You may like....REFRESH ICON
+					<div class="row trend_header"><!--Trends Header-->
+						Trends
 					</div>
-					<div class="row you_may_like_list">
+					<div class="row trend_list">
 
 								<dl>
 								  <dt>..</dt>
 								  <dd>...</dd>
 								  <dt>..</dt>
 								  <dd>...</dd>
-								  <dt>..</dt>
-								  <dd>...</dd>
-								  <dt>..</dt>
-								  <dd>...</dd>
-								  <dt>..</dt>
-								  <dd>...</dd>
+
 								</dl>
 					</div>
 
@@ -188,13 +185,17 @@
 
 		</div>
 
-	</div><!--END OF MAIN Row-->
+
+
+		</div>
+
+	</div><!--END OF MAIN Row(4)-->
 
 
 
 
 
-</div><!--END OF CONTAINER-->
+</div><!--END OF MAIN CONTAINER-->
 
 
 

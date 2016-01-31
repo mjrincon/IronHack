@@ -1,7 +1,7 @@
-div {
+/*div {
 	border: 5px; border-style: solid
 
-}
+}*/
 
 
 
@@ -9,12 +9,26 @@ div {
 
 .banner img{
 height: 300px;
-width:100%
+width:100%;
+position:relative;
 
 }
 
+.avatar{
 
+	/*position: absolute;*/
 
+}
+
+.hover_over_column{
+
+	position: relative;
+}
+
+left_column_username{
+
+	position: fixed;
+}
 
 .username_info  span{
 
@@ -57,7 +71,14 @@ height:200px;
 .you_may_like_header{
 
 	padding:10px 10px 10px 10px;
-	border: 0
+	/*border: 0;*/
+	color: gray;
+
+}
+
+.trend_header{
+
+	color:gray;
 }
 
 
