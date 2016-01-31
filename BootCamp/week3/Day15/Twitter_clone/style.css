@@ -1,8 +1,8 @@
-/*div {
+div {
 	border: 5px; border-style: solid
 
 }
-*/
+
 
 
 
@@ -12,6 +12,7 @@ height: 300px;
 width:100%
 
 }
+
 
 
 
@@ -44,8 +45,33 @@ width:100%
 height:200px;
 }
 
+.follow_button{
+}
+
+.new_to_twitter_box{
+
+
+
+}
+
+.you_may_like_header{
+
+	padding:10px 10px 10px 10px;
+	border: 0
+}
+
+
+
+
 
 http://i2.cdn.turner.com/nba/nba/dam/assets/160118224425-lebron-james-cleveland-cavaliers-v-golden-state-warriors.1000x563.jpeg
+
+
+
+
+
+
+
 
 
 

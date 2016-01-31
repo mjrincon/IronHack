@@ -33,13 +33,23 @@
  		</section>
 	</div>
 
-	<div class= "row"> <!--Tracking # Tweets Rows-->
-	<button type="button" class="btn btn-link"># Tweets</button>
-	<button type="button" class="btn btn-link"># Following</button>
-	<button type="button" class="btn btn-link"># Followers</button>
-	<button type="button" class="btn btn-link"># Likes</button>
-	<button type="button" class="btn btn-link"># Lists</button>
-	<button type="button" class="btn btn-default" align="right"><span class="glyphicon glyphicon-user" aria-hidden="true"style="color: blue"></span>Follow</button>
+	<div class= "row"> <!--Tracking # Tweets Rows / Follow Button-->
+		<div class= "col-sm-3">
+			<!--Avatar hovers over this column-->
+		</div>
+		<div class= "col-sm-6"> <!--#'s' column-->
+			<button type="button" class="btn btn-link"># Tweets</button>
+			<button type="button" class="btn btn-link"># Following</button>
+			<button type="button" class="btn btn-link"># Followers</button>
+			<button type="button" class="btn btn-link"># Likes</button>
+			<button type="button" class="btn btn-link"># Lists</button>
+		</div>
+		<div class= "col-sm-3"> <!--Follow Button column-->
+
+			<button type="button" class="btn btn-default follow_button" align="right"><span class="glyphicon glyphicon-user" aria-hidden="true"style="color: blue">Follow</span></button>
+
+		</div>
+
 
 
 	</div>
@@ -72,13 +82,13 @@
 				<span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
 				<button type="button" class="btn btn-link">1,000,000 Photos and Videos</button>
 				<br>
-				<a href="http://www.w3schools.com">
+
 				<img border="0" alt="W3Schools" src="http://i2.cdn.turner.com/nba/nba/dam/assets/160106143121-michael-jordan-nba-finals-game-5---chicago-bulls-v-los-angeles-lakers.1000x563.jpeg" width="75" height="75">
-				</a>
+
 				<img border="0" alt="W3Schools" src="http://i2.cdn.turner.com/nba/nba/dam/assets/160113002942-lebron-james-cleveland-cavaliers-v-dallas-mavericks.1000x563.jpeg" width="75" height="75">
-				</a>
+
 				<img border="0" alt="W3Schools" src="http://i2.cdn.turner.com/nba/nba/dam/assets/160111223244-manu-ginobili-san-antonio-spurs-v-brooklyn-nets.1000x563.jpeg" width="75" height="75">
-				</a>
+
 
 
 			</aside>
@@ -111,25 +121,69 @@
 
 		<div class= "col-sm-3"><!--Right Column/Stuff/3 Rows-->
 
-			<div class= "row"><!--Register Button Row-->
-			Stuff<br>
-			Goes<br>
-			Here<br>
+			<div class= "row new_to_twitter_box"><!--Register Button Row-->
+
+				<div class="jumbotron">
+	  				<h4>New to Twitter?</h4>
+	  				<p>Sign up now to get your own personalized timeline!</p>
+	  				<p><a class="btn btn-primary btn-lg" href="#" role="button">Register</a></p>
+				</div>
+
 			</div>
 
-			<div class= "row"><!--Suggestions Row-->
-			Stuff<br>
-			Goes<br>
-			Here<br>
+			<div class= "row"><!--Suggestions Row/You May Like-->
+				<div class= "col-sm-12"><!--Needed to add a column to add 2 more rows-->
+					<div class="row you_may_like_header">
+						<div class="jumbotron">
+  							<h8>You May Like...Refresh Button</h8>
+
+						</div>
+					</div>
+					<div class="row you_may_like_list">
+
+								<dl>
+								  <dt>..</dt>
+								  <dd>...</dd>
+								  <dt>..</dt>
+								  <dd>...</dd>
+								  <dt>..</dt>
+								  <dd>...</dd>
+								  <dt>..</dt>
+								  <dd>...</dd>
+								  <dt>..</dt>
+								  <dd>...</dd>
+								</dl>
+					</div>
+
+				</div>
+
+
 			</div>
 
 			<div class= "row"><!--Links/Trends Row-->
-			Stuff<br>
-			Goes<br>
-			Here<br>
-			Stuff<br>
-			Goes<br>
-			Here<br>
+				<div class= "col-sm-12"><!--Needed to add a column to add 2 more rows-->
+					<div class="row you_may_like_header">
+						You may like....REFRESH ICON
+					</div>
+					<div class="row you_may_like_list">
+
+								<dl>
+								  <dt>..</dt>
+								  <dd>...</dd>
+								  <dt>..</dt>
+								  <dd>...</dd>
+								  <dt>..</dt>
+								  <dd>...</dd>
+								  <dt>..</dt>
+								  <dd>...</dd>
+								  <dt>..</dt>
+								  <dd>...</dd>
+								</dl>
+					</div>
+
+				</div>
+
+
 			</div>
 
 		</div>
