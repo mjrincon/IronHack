@@ -1,7 +1,7 @@
 class ContactController < ApplicationController
 
 	def index
-		@contacts = Contact.all
+		@contacts = Contact.all.sort_by &:created_at
 	end
 
 	def new

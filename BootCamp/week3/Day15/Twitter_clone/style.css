@@ -1,10 +1,12 @@
 /*div {
-	border: 5px; border-style: solid
+	border: 5 px
 
 }*/
 
-
-
+div {
+	position: relative;
+	margin: 0px 0px 0px 0px
+}
 
 
 .banner img{
@@ -14,20 +16,31 @@ position:relative;
 
 }
 
+
 .avatar{
-
 	/*position: absolute;*/
+	top: 0;
+	left:0;
+
+ height:200px;
+ width:200px;
 
 }
 
-.hover_over_column{
-
-	position: relative;
+.avatar img {
+	height: 100%;
+	width: 100%;
 }
+
+.username_info img{
+
+	margin: 1px 1px 1px 1px;
+}
+
 
 left_column_username{
 
-	position: fixed;
+
 }
 
 .username_info  span{
@@ -40,8 +53,8 @@ left_column_username{
 	/*float:left;*/
 	height:75px;
 	width:75px;
-	position:relative;
-	clear:both;
+
+
 }
 
 .feed button{

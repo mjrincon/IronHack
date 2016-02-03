@@ -1,9 +1,16 @@
 class Project < ActiveRecord::Base
 
-	def self.clean_old
-		d = Date.today
-		where("created_at <= ?", d-1.week).destroy_all
-	end
+
+	has_many :entries
+
+	validates :name,
+		presence: true,
+		uniqueness: true,
+		length: {maximum:30}, format: {with:/(\w\s)+/}
+
+
+
+
 
 
 end

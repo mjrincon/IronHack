@@ -6,36 +6,19 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Project.create name: 'IronHack' , description: 'IronHack is a...'
+5.times do |i|
 
-Project.create name: 'WynCode' , description: 'WynCode is a...'
+p = Project.create(name: "The name is #{i}", description: "The description is #{i}")
 
-Project.create name: 'Udacity' , description: 'Udacity is a...'
+if i.odd?
 
-Project.create name: 'a' , description: 'Blah is a...'
+p.entries.create(minutes: 10 * 1, hours: 1 * i)
 
-Project.create name: 'b' , description: 'Blah is a...'
+else
+	p.entries.create(minutes: i, hours: i)
+end
 
-Project.create name: 'c' , description: 'Blah is a...'
-
-Project.create name: 'd' , description: 'Blah is a...'
-
-Project.create name: 'e' , description: 'Blah is a...'
-
-Project.create name: 'f' , description: 'Blah is a...'
-
-Project.create name: 'g' , description: 'Blah is a...'
-
-Project.create name: 'h' , description: 'Blah is a...'
-
-Project.create name: 'i' , description: 'Blah is a...'
-
-Project.create name: 'j' , description: 'Blah is a...'
-
-Project.create name: 'k' , description: 'Blah is a...'
-
-Project.create name: 'l' , description: 'Blah is a...'
-
+end
 
 
 
