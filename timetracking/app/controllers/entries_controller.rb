@@ -10,6 +10,8 @@ class EntriesController < ApplicationController
 		@entry = project.entries.new
 	end
 
+
+
 	def create
 		@project = Project.find(params[:project_id])
 		@entry = @project.entries.new params(entry_params)
