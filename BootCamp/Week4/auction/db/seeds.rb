@@ -10,3 +10,4 @@ puts
 
 User.create(name: "MJRincon", email: "mathewjrincon@gmail.com")
 
+Product.create(name: "PS4", description: "Brand New PS4", deadline: DateTime.new(2016,3,1,12) )

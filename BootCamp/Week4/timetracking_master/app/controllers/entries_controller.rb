@@ -1,4 +1,9 @@
 class EntriesController < ApplicationController
+  def destroy
+    project = Project.find()
+
+  end
+
 
   def update
     @project = Project.find(params[:project_id])
@@ -21,8 +26,10 @@ class EntriesController < ApplicationController
     @entry = @project.entries.new(entry_params)
 
     if @entry.save
+      flash[:notice] = "Entry created succesfully"
       redirect_to action: "index", controller: "entries", project_id: @project.id
     else
+      flash[:alert] = "Entry FAILED"
       render "new"
     end
   end
@@ -46,6 +53,6 @@ class EntriesController < ApplicationController
   private
 
   def entry_params
-    params.require(:entry).permit(:hours, :minutes)
+    params.require(:entry).permit(:hours, :minutes, :date)
   end
 end
