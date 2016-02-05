@@ -1,22 +1,22 @@
 class Concert < ActiveRecord::Base
 
 	validates :artist,
-    presence: true,
+    presence: true
 
     validates :venue,
-    presence: true,
+    presence: true
 
     validates :city,
-    presence: true,
+    presence: true
 
     validates :date,
-    presence: true,
+    presence: true
 
     validates :price,
-    presence: true,
+    presence: true
 
     validates :description,
-    presence: true,
+    presence: true
 
 
 end

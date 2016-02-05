@@ -1,4 +1,19 @@
 Rails.application.routes.draw do
+
+
+  get "/" => "concerts#home"
+
+  get "/concerts" => 'concerts#index'
+
+  get "/concerts/new" => 'concerts#new'
+
+  post("/concerts", :to => "concerts#create")
+
+
+  # resources(:concerts, only: [:show, :new, :create, :index]) do
+
+  # end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
