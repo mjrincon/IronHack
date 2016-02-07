@@ -18,8 +18,15 @@
   <%= f.number_field :price %>
   <br>
   <%= f.label :description %>
+  <br>
   <%= f.text_area :description%>
+  <br>
+  <%= f.submit "Save" %>
+  <!-- <#%= link_to "Cancel", project_entries_path(@concert) %> -->
+  <!--  <button type="submit">Add this Concert</button>
+  <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>"> -->
 
-  <!-- <#%= f.submit "Save" %> -->
-  <!-- <#%= link_to "Cancel", project_entries_path(@project) %> -->
-<% end %>
+
+
+  <% end %>
