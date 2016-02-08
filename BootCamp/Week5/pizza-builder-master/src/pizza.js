@@ -9,3 +9,11 @@ $('.btn-green-peppers').on('click', function () {$('.green-pepper').slideToggle(
 
 $('.btn-sauce').on('click', function () {$('.sauce').toggleClass('sauce-white')});
 
+$('.btn-pepperonni').on('click', function () {$('.btn-pepperonni').toggleClass('active')});
+
+$('.btn-mushrooms').on('click', function () {$('.btn-mushrooms').toggleClass('active')});
+
+
+$('.btn-crust').on('click', function () {$('.btn-crust').toggleClass('active')});
+
+$('.btn-sauce').on('click', function () {$('.btn-sauce').toggleClass('active')});
