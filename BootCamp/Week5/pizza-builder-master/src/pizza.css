@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe,
+crusthtml, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, img, ins, kbd, q, s, samp,
@@ -231,6 +231,12 @@ p.description {
 
 .btn-sauce {
   background: #fff4aa;
+  box-shadow: 0 6px #998500;
+  color: #555;
+}
+
+.btn-sauce-red {
+  background: red;
   box-shadow: 0 6px #998500;
   color: #555;
 }
