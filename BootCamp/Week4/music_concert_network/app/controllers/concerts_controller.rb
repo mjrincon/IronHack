@@ -24,12 +24,20 @@ class ConcertsController < ApplicationController
 	end
 
 	def create
+
+		# @concert = Create.new(params)
+		# if concert.save
+		# redirect_to conerts_path
+		# else render "new"
+
 		Concert.create(concert_params)
 
 		redirect_to concerts_path
 	end
 
 	def show
+		# render "show" - auto
+		#
 		id = params[:id]
 		@concert = Concert.find_by(id: id)
 		@comment = @concert.comments.new
