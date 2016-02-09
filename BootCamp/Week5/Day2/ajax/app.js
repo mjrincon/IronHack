@@ -9,7 +9,10 @@ $(document).on("ready", function () {
 
 
 	});
-
+	$(".js-submit").on("click", function (event) {
+		event.preventDefault();
+		addCharacter();
+	});
 
 
 });
@@ -79,6 +82,39 @@ function publishJarJar () {
 		},
 	});
 }
+
+function addCharacter () {
+	var charName = $(".js-char-name").val();
+	var charOccupation = $(".js-char-occupation").val();
+	var charWeapon = $(".js-char-weapon").val();
+
+	var formCharacter= {
+		name: charName,
+		occupation: charOccupation,
+		weapon: charWeapon
+};
+
+	$.ajax({
+		type: "POST",
+
+		url: "https://ironhack-characters.herokuapp.com/characters",
+
+		data: formCharacter,
+
+		success: function () {
+			alert("Your character has been added succesfully");
+
+		},
+
+		error: function () {
+			alert("Your potato side power is not strong enough to add this character")
+		}
+
+	});
+
+
+}
+
 
 
 
