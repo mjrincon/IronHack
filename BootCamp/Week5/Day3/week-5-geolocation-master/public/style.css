@@ -1,0 +1,16 @@
+#map {
+  height: 400px;
+  width: 400px;
+  position: middle;
+  margin-left: 450px;
+}
+
+#get-places {
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+#input-wrapper {
+  margin: auto;
+  width: 25%;
+}

@@ -18,21 +18,21 @@ event.preventDefault();
       // console.log(response.artists.items.slice(0,4));
       alert("SUCCESS!!!");
     },
-    error: function () {
+    error: function (response) {
       alert("Damnnnnnnn, you done goofed");
     }
   });
 
 }
 
-function displayArtist (pepito) {
+function displayArtist (response) {
 
 
 
-	var artistFind = pepito.artists.items.slice(0,4);
+	var artistFind = response.artists.items.slice(0,4);
 
 		artistFind.forEach(function (art) {
-			console.log(art.images[0].url);
+			console.log(art.images.url);
 			var html = `
 				<li>
 					<h2> ${art.name} </h2>
@@ -46,8 +46,5 @@ function displayArtist (pepito) {
 
 	}
 
-	898075059955
-
-routing: 063100277
 
 
