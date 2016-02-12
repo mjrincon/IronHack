@@ -17,6 +17,7 @@ PokemonApp.Pokemon.prototype.render = function() {
 		success: function (response) {
 			self.info = response;
 			console.log(self.info)
+			// Pokemon Info
 			$(".js-pkmn-name").text(self.info.name);
 			$(".js-pkmn-number").text(self.info.pkdx_id);
 			$(".js-pkmn-height").text(self.info.height);
@@ -28,6 +29,9 @@ PokemonApp.Pokemon.prototype.render = function() {
 			$(".js-pkmn-sa").text(self.info.sp_atk);
 			$(".js-pkmn-sd").text(self.info.sp_def);
 
+			// Pokemon Type
+
+
 			$(".js-pkmn-type").text(self.info.types[0].name);
 
 
@@ -38,22 +42,47 @@ PokemonApp.Pokemon.prototype.render = function() {
 		error: function () {
 			console.log("BAD. VERY BAD");
 		}
+	// 1st Ajax ends below
 	});
-};
 
+	$.ajax({
+
+		url: "self.info.sprites[0].resource_uri" + this.id,
+
+		success: function (response) {
+			self.info = response;
+			console.log(self.info)
+			// Pokemon Sprite
+			$(".js-pkmn-sprites").text(self.info.response.image);
+		},
+
+		error: function () {
+			console.log("EOEOROOSOEWOEOEOODSWOOOOO!");
+		},
+	});
+}
 PokemonApp.Pokemon.idFromUri = function (pokemonUri) {
 	var uriSegments = pokemonUri.split("/")
 	var secondLast = uriSegments.length - 2;
 	return uriSegments[secondLast];
 };
 
-$(document).on("ready", function (){
+PokemonApp.PokemonEvolutions.getSprite = function (uri) {
 
-	$(".js-show-pokemon").on("click", function (event){
-		var $button = $(event.currentTarget);
+}
+
+
+$(document).on("ready",function(){
+	$(".js-show-pokemon").on("click",function(event){
+		var $button= $(event.currentTarget);
 		var pokemonUri = $button.data("pokemon-uri");
 
 		var pokemon = new PokemonApp.Pokemon(pokemonUri);
 		pokemon.render();
 	});
 });
+
+// "http://pokeapi.co/api/v1/sprite/10/
+
+
+
