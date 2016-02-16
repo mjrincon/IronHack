@@ -60,16 +60,16 @@ class SandwichesController < ApplicationController
 		render json: sandwich.to_json({:include => :ingredients})
 	end
 
-	def total_calories
+	# def total_calories
 
-		sandwich = Sandwich.find_by(id: params[:ingredient_id])
-		sandwich.ingredient.each do |calories|
+	# 	sandwich = Sandwich.find_by(id: params[:ingredient_id])
+	# 	sandwich.ingredient.each do |calories|
 
-			sandwich.total_calories = calorie.calories
+	# 		sandwich.total_calories = calorie.calories
 
-		end
-		render json: sandwich.total_calories
-	end
+	# 	end
+	# 	render json: sandwich.total_calories
+	# end
 
 	private
 
