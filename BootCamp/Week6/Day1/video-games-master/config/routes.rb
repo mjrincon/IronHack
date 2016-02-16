@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   resources :registrations
+  resources :tournaments
+  resources :players
   get '/' => 'tournaments#index'
+
+  get '/api/tournaments' => 'tournaments#list'
+
+  # post '/sandwiches/:id/ingredients/add' => "sandwiches#add_ingredient"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
