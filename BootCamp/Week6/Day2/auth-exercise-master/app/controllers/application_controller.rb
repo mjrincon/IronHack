@@ -16,7 +16,16 @@ class ApplicationController < ActionController::Base
   def authorize_user
 
     unless current_user
-      flash[:message] = 'Please log in or register to access this page'
+      flash[:message] = 'Log in or Register noob.'
+
+      redirect_to '/'
+    end
+  end
+
+  def admin_only
+
+    unless current_user && current_user.role == "admin"
+      flash[:access_denied] = "What are you doing? GET OUT!!!"
 
       redirect_to '/'
     end
