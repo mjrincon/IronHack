@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  devise_for :users
+
   get "/" => "concerts#home"
 
   get "/concerts" => 'concerts#index'

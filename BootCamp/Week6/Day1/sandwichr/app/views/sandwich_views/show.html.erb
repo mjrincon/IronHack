@@ -1,8 +1,18 @@
-<h1><%= @sandwich.name %></h1>
+<h1 class="js-sandwich" data-id= "<%= @sandwich.id%>"><%= @sandwich.name %></h1>
 <ul>
+	<li>
+	<%= @sandwich.bread_type %>
+	</li>
 	<% @ingredients.each do |ingredient| %>
 	<li>
 		<%= ingredient.name %>
 	</li>
+	<% end %>
+	<br>
+	<% @all_ingredients.each do |i| %>
+	<li>
+		<button class="js-add-ingredient" data-ingredient-name= "<%= i.name %>"data-ingredient-id= "<%= i.id %>">><%= i.name %></button>
+	</li>
+
 	<% end %>
 </ul>

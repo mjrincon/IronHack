@@ -52,11 +52,6 @@ class SandwichesController < ApplicationController
 
 		sandwich.ingredients.push(ingredient)
 
-		unless sandwich
-			render json: {error: "sandwich not found"},
-			status: 404
-			return
-		end
 		render json: sandwich.to_json({:include => :ingredients})
 	end
 

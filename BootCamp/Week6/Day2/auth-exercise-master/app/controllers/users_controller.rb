@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
 
+  before_action :authorize_user, only: [:show]
+
   # renders the home page
 def home
   @name = current_user ? @current_user.username : "Ironhacker"
