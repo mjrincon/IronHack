@@ -40,7 +40,7 @@ img {
 // to make views framework-neutral
 main {
   // border:3px solid black;
-  @extend .container-fluid;
+  @extend .container;
   // background-color: #eee;
   // padding-bottom: 80px;
   width: 100%;
