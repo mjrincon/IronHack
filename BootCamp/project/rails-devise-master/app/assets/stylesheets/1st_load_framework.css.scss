@@ -3,12 +3,6 @@
 @import "bootstrap";
 
 
-div {
-
-    border:3px solid black;
-
-}
-
 // make all images responsive by default
 img {
   @extend .img-responsive;
@@ -23,21 +17,21 @@ img {
 // create your own classes
 // to make views framework-neutral
 .column {
-  border:3px solid black;
+  // border:3px solid black;
   @extend .col-md-6;
   @extend .text-center;
   }
 .form {
-  border:3px solid black;
+  // border:3px solid black;
   @extend .col-md-6;
   }
 .form-centered {
-  border:3px solid black;
+  // border:3px solid black;
   @extend .col-md-6;
   @extend .text-center;
   }
 .submit {
-  border:3px solid black;
+  // border:3px solid black;
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-lg;
@@ -45,15 +39,15 @@ img {
 // apply styles to HTML elements
 // to make views framework-neutral
 main {
-  border:3px solid black;
-  @extend .container;
-  background-color: #eee;
-  padding-bottom: 80px;
+  // border:3px solid black;
+  @extend .container-fluid;
+  // background-color: #eee;
+  // padding-bottom: 80px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
   }
 section {
-  border:3px solid black;
+  // border:3px solid black;
   @extend .row;
   margin-top: 20px;
   }
