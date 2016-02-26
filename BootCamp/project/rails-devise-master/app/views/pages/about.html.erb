@@ -1,19 +1,42 @@
-<% content_for :title do %>Badges<% end %>
-<!-- <div class="container-fluid">
-  <div class="jumbotron">
-    <h1>Badges</h1>
-    <p></p>
-  </div>
-</div> -->
+<% content_for :title do %>My Report Card<% end %>
 
-<div class="container-fluid">
-   <div class="row">
-	<img src="http://www.freewebheaders.com/wordpress/wp-content/gallery/bicycle-racing/high-bay-mountain-biking-on-the-dolomites-paths-web-header.jpg" class="img-responsive">
-   </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="http://lorempixel.com/555/300/sports">
+
+                </div><!-- card image -->
+
+                <div class="card-content">
+                    <span class="card-title">Mathew Rincon's Report Card</span>
+                    <button type="button" id="show" class="btn btn-custom pull-right" aria-label="Left Align">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                </div><!-- card content -->
+                <div class="card-action">
+                    <a href="#" target="new_blank">Link</a>
+                    <a href="#" target="new_blank">Link</a>
+                    <a href="#" target="new_blank">Link</a>
+                    <a href="#" target="new_blank">Link</a>
+                    <a href="#" target="new_blank">Link</a>
+                </div><!-- card actions -->
+                <div class="card-reveal">
+                    <span class="card-title">FEATS</span> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <!-- Accomplishments -->
+                    <p>
+						<ul>
+							<li>Spartan Run</li>
+							<li>Miami Maraton</li>
+							<li>HoopItUp Tournament</li>
+							<li>Color Run</li>
+
+
+						</ul>
+                    </p>
+                </div><!-- card reveal -->
+            </div>
+        </div>
+    </div>
 </div>
-<!--
-Eventbrite.token = `your_access_token`
-Eventbrite::Event.search({q: 'Dogecoin'})
-
-# This is to specific the token you want to use for each API call.
-Eventbrite::Event.search({q: 'Dogecoin'}, 'your_access_token') -->
