@@ -5,27 +5,22 @@
  *= require_self
  *= require_tree .*/
 
-
 button {
 
 
 }
 
 /*nav {
-
 border:3px solid black;
-
 }*/
 
 /*div.collapse.navbar-collapse {
-
     background-color: white
-
 }*/
 
 nav.navbar.inverse.navbar-fixed-top {
 
-	background-color: white
+  background-color: white
 }
 
 
@@ -41,9 +36,7 @@ nav.navbar.inverse.navbar-fixed-top {
 }
 
 /*main {
-
-	background-color: #white!important;
-
+  background-color: #white!important;
 }*/
 
 
@@ -139,4 +132,3 @@ nav.navbar.inverse.navbar-fixed-top {
     background-color: transparent;
     font-size:18px;
 }
-
