@@ -24,6 +24,17 @@ nav.navbar.inverse.navbar-fixed-top {
 }
 
 
+
+li div {
+
+  text-align:right;
+}
+li div span {
+
+  float:right;
+
+   }
+
 /*h1 {
     text-align: center!important;
 }
@@ -35,8 +46,19 @@ nav.navbar.inverse.navbar-fixed-top {
   width: 100%!important;
 }
 
+
+
+@font-face {
+  font-family: 'Nike Total 90';
+  src: url('http://www.fontsaddict.com/fontface/nike-total-90.ttf');
+}
+
+div {
+    font-family: 'Nike Total 90';
+}
+
 /*main {
-  background-color: #white!important;
+
 }*/
 
 
