@@ -59,7 +59,13 @@ li {
 
 .image_logo {
 
-  margin-left: 300px;
+  margin-left: 70px;
+}
+
+.btn btn-default btn-lg btn-block-nav {
+
+margin-top: 10px;
+
 }
 
 /*Leaderboard shiii below*/
@@ -69,16 +75,19 @@ li {
    width: 100%; /* for IE 6 */
 }
 
-h2 {
+h3 {
    position: absolute;
    top: 200px;
    left: 0;
    width: 100%;
 }
 
+/*.nav_list {
 
+margin-top: 8px;
+}*/
 
-h2 span {
+h3 span {
    color: white;
    font: bold 24px/45px Helvetica, Sans-Serif;
    letter-spacing: -1px;
@@ -88,7 +97,7 @@ h2 span {
 }
 
 
-h2 span.spacer {
+h3 span.spacer {
    padding:0 5px;
 }
 
