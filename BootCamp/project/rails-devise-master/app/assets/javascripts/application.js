@@ -28,7 +28,12 @@ $(function(){
     });
 });
 
-// VIDEO SHIT BELOW
+// Leaderboard SHIT BELOW
+
+
+
+
+// LB shii Above
 
 // var vid = document.getElementById("bgvid");
 // var pauseButton = document.querySelector("#polina button");
