@@ -26,9 +26,10 @@
                     s += "<div class='eventList'>";
                     s += "<h2><a href='" + event.url + "'>" + event.name.text + "</a></h2>";
                     s += "<p><b>Location: " + event.venue.address.address_1 + "</b><br/>";
+                    s += "<p><b>Image: " + event.venue.address.address_1 + "</b><br/>";
                     s += "<b>Date/Time: " + eventTime + "</b></p>";
 
-                    s += "<p>" + event.description.text + "</p>";
+                    // s += "<p>" + event.description.text + "</p>";
                     s += "</div>";
                 }
                 $events.html(s);

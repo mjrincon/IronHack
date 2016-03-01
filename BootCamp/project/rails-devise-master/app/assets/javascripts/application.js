@@ -32,7 +32,6 @@ $(function(){
 
 
 
-
 // LB shii Above
 
 // var vid = document.getElementById("bgvid");
